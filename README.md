@@ -9,6 +9,46 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Introduction
+<p align='center'>
+  <img src='https://thumbs.gfycat.com/PlushScratchyLeveret-size_restricted.gif' alt='VOInteractiveLabel example'/>
+</p>
+
+## Usage
+
+```swift
+import VOInteractive
+class ViewController: UIViewController, VOInteractiveLabelDelegate {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        myLabel = FillInBlankLabel3()
+        myLabel.delegate = self
+        myLabel.text = "My name is enter name here"
+        myLabel.blankArray.append(FillInBlankModel1(type: .string, text: "enter name here", hint: "Please enter your name",
+                                               placeholder: "Name", attributes: [NSForegroundColorAttributeName: UIColor.black,
+                                                                                      NSUnderlineColorAttributeName: UIColor.black,
+                                                                                      NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue]))
+        self.view.addSubview(myLabel)
+        myLabel.setupLabelAttributes()
+    }
+    
+    // MARK: - VOInteractiveLabel 
+    func clickedOnLinkAtIndex(_ index: Int, inLabel label: FillInBlankLabel3) {
+        print("Clicked on link")
+    }
+    func clickedOnBlankAtIndex(_ index: Int, inLabel label: FillInBlankLabel3) {
+        print("Clicked on blank")
+    }
+    func clickedOnHashtagAtIndex(_ index: Int, inLabel label: FillInBlankLabel3) {
+        print("Clicked on hashtag")
+    }
+    func clickedOnMentionAtIndex(_ index: Int, inLabel label: FillInBlankLabel3) {
+        print("Clicked on mention")
+    }
+}
+```
+
 ## Requirements
 
 ## Installation
@@ -19,10 +59,6 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "VOInteractiveLabel"
 ```
-
-## Author
-
-valosip, valosip@gmail.com
 
 ## License
 
