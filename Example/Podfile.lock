@@ -1,0 +1,16 @@
+PODS:
+  - VOInteractiveLabel (0.0.1)
+
+DEPENDENCIES:
+  - VOInteractiveLabel (from `../`)
+
+EXTERNAL SOURCES:
+  VOInteractiveLabel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VOInteractiveLabel: f33874440a7a2b516e7769903fcee5b656eeadbf
+
+PODFILE CHECKSUM: f8ee45088b088cbcd5c2124e4091c71a1965afd7
+
+COCOAPODS: 1.2.1

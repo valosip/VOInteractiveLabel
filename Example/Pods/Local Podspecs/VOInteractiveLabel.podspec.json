@@ -1,0 +1,23 @@
+{
+  "name": "VOInteractiveLabel",
+  "version": "0.0.1",
+  "summary": "Fill in the blank UILabel",
+  "description": "Add fill in the blank options to UIlabel.",
+  "homepage": "https://github.com/valosip/VOInteractiveLabel",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "valosip": "valosip@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/valosip/VOInteractiveLabel.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "VOInteractiveLabel/Classes/**/*",
+  "frameworks": "UIKit"
+}
