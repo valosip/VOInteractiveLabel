@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VOInteractiveLabel'
-  s.version          = '0.0.2'
-  s.summary          = 'Fill in the blank UILabel'
+  s.version          = '0.0.3'
+  s.summary          = 'Fill in the blank UILabel with link, hashtag and mention support'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

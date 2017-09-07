@@ -25,10 +25,14 @@ class ViewController: UIViewController, VOInteractiveLabelDelegate {
         myLabel = FillInBlankLabel3()
         myLabel.delegate = self
         myLabel.text = "My name is enter name here"
-        myLabel.blankArray.append(FillInBlankModel1(type: .string, text: "enter name here", hint: "Please enter your name",
-                                               placeholder: "Name", attributes: [NSForegroundColorAttributeName: UIColor.black,
-                                                                                      NSUnderlineColorAttributeName: UIColor.black,
-                                                                                      NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue]))
+        myLabel.blankArray.append(FillInBlankModel1(type: .string, 
+                                    text: "enter name here", 
+                                    hint: "Please enter your name", 
+                                    placeholder: "Name", 
+                                    attributes: [NSForegroundColorAttributeName: UIColor.black,
+                                                NSUnderlineColorAttributeName: UIColor.black,
+                                                NSUnderlineStyleAttributeName: NSUnderlineStyle.styleSingle.rawValue]))
+
         self.view.addSubview(myLabel)
         myLabel.setupLabelAttributes()
     }
@@ -50,6 +54,7 @@ class ViewController: UIViewController, VOInteractiveLabelDelegate {
 ```
 
 ## Requirements
+iOS 7+
 
 ## Installation
 
@@ -59,6 +64,15 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "VOInteractiveLabel"
 ```
+## Changelog
+### 0.0.3
+- Additional documentation
+
+### 0.0.2
+- Add documentation and screenshots
+
+### 0.0.1
+- Initial beta release
 
 ## License
 
